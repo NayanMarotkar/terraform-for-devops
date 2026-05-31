@@ -136,3 +136,12 @@ tags = merge(local.common_tags, {
 
   depends_on = [aws_instance.web_server]
 }
+
+# Imported S3 Bucket (Renamed)
+resource "aws_s3_bucket" "logs_bucket" {
+  bucket = "terraweek-import-test-nayan"
+
+  tags = merge(local.common_tags, {
+    Name = "${local.name_prefix}-imported-bucket"
+  })
+}
