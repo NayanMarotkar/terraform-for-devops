@@ -1,0 +1,44 @@
+{
+    "nodegroup": {
+        "nodegroupName": "terraweek_nodes-20260601055058073400000013",
+        "nodegroupArn": "arn:aws:eks:us-east-2:958486869640:nodegroup/terraweek-eks/terraweek_nodes-20260601055058073400000013/10cf40de-1f20-fcb2-9513-5483c5fc18fe",
+        "clusterName": "terraweek-eks",
+        "version": "1.31",
+        "releaseVersion": "1.31.13-20251209",
+        "createdAt": "2026-06-01T05:50:59.681000+00:00",
+        "modifiedAt": "2026-06-01T05:50:59.681000+00:00",
+        "status": "CREATING",
+        "capacityType": "ON_DEMAND",
+        "scalingConfig": {
+            "minSize": 1,
+            "maxSize": 3,
+            "desiredSize": 2
+        },
+        "instanceTypes": [
+            "t3.medium"
+        ],
+        "subnets": [
+            "subnet-0a19fe3b061edae64",
+            "subnet-071e7207f6b5a8fa7"
+        ],
+        "amiType": "AL2_x86_64",
+        "nodeRole": "arn:aws:iam::958486869640:role/terraweek_nodes-eks-node-group-20260601054229717500000002",
+        "health": {
+            "issues": []
+        },
+        "updateConfig": {
+            "maxUnavailablePercentage": 33
+        },
+        "launchTemplate": {
+            "name": "terraweek_nodes-20260601055052462600000011",
+            "version": "1",
+            "id": "lt-02eab61187344498e"
+        },
+        "tags": {
+            "Project": "TerraWeek",
+            "Environment": "dev",
+            "ManagedBy": "Terraform",
+            "Name": "terraweek_nodes"
+        }
+    }
+}
